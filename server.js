@@ -39,7 +39,7 @@ server.get('/weather', (request, response) => {
 
 });
 
-
+server.use('*', notFoundHandler)
 
 
 function CityInfo(city, geoData) {
@@ -57,10 +57,14 @@ function WeatherInfo(weatherData, date) {
     cityWeatherArrayOfObj.push(this);
 };
 
+function notFoundHandler(request, response){
+    response.status(404).send({'status':404 , 'responseText':'Sorry, something went wrong'})
+}
 
 function errorHandler() {
     response.status(500).send(error);
 }
+
 
 // Make sure the server is listening to the upcoming request
 server.listen(PORT, () => {
