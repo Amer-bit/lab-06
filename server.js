@@ -50,7 +50,7 @@ function CityInfo(city, geoData) {
 };
 
 let cityWeatherArrayOfObj = [];
-console.log('hey', cityWeatherArrayOfObj);
+// console.log('hey', cityWeatherArrayOfObj);
 function WeatherInfo(weatherData, date) {
     this.forecast = weatherData;
     this.time = date;
