@@ -28,7 +28,7 @@ server.get('/weather', (request, response) => {
 
         weatherData.data.forEach(value => {
             let weatherDesc = value.weather.description;
-            let date = value.datetime
+            let date =  new Date(value.datetime).toDateString();
             new WeatherInfo(weatherDesc, date)
         });
         response.status(200).json(cityWeatherArrayOfObj);
