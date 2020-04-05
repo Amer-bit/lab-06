@@ -6,9 +6,9 @@ Estimate of time needed to complete: 6 hours
 
 Start time: 3:30PM
 
-Finish time: _____
+Finish time: 10:00PM
 
-Actual time needed to complete: _____
+Actual time needed to complete: 6 and half hours
 
 # City Explorer 
 **Author**: Amer Majdi
